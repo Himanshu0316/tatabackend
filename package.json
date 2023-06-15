@@ -20,7 +20,8 @@
     "instamojo-nodejs": "^0.0.5",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.2",
-    "razorpay": "^2.8.3"
+    "razorpay": "^2.8.3",
+    "vercel": "^30.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

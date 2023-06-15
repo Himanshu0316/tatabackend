@@ -11,5 +11,7 @@
         "src": "/(.*)",
         "dest": "/"
       }
-    ]
+    ],
+    "Origin Control": "Off",
+    "s-maxage": 0
   }

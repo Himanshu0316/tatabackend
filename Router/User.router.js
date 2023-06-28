@@ -6,7 +6,7 @@ const UserRouter = Router();
 UserRouter.post("/login", async (req, res) => {
   const details = req.body;
   const token = req.headers["authorization"]?.split(" ")[1];
-   console.log(mobile, token);
+   console.log(details.mobile, token);
   try {
     const user = await UserModel.findOneAndUpdate(
       { mobile: details.mobile },

@@ -11,8 +11,10 @@ const ProductRouter = require("./Router/Product.router");
 const Razorpay = require("razorpay");
 const PaymentRouter = require("./Router/Payment.router");
 const app = express();
-
-app.use(cors());
+const corsOptions ={
+    credentials:true,
+}
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/products", ProductRouter);
